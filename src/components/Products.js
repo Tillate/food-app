@@ -8,11 +8,11 @@ const Products = () => {
 
     useEffect(() => {
         axios
-            .get('https://api.giphy.com/v1/gifs/trending?api_key=ufkzL96rHd8HrvtN3l7Qew95ZEzCEfKI&limit=25&rating=g')
+            .get('https://api.giphy.com/v1/gifs/trending?api_key=ufkzL96rHd8HrvtN3l7Qew95ZEzCEfKI&limit=25&rating=pg')
             .then((res) => setDataGif(res.data.data));
+            // console.log(dataGif);
     }, []);
 
-    console.log(dataGif);
 
 
     return (
