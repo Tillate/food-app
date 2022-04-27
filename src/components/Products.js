@@ -16,9 +16,9 @@ const Products = () => {
 
 
     return (
-        <div>
-            <h1>My Gifs</h1>
-            <ul>
+        <div className='card-container'>
+            <h2>Random Gif</h2>
+            <ul className='card-list'>
                 {dataGif.map((gif) => (
                     <Card key={gif.id} gif={gif} />
                 ))}

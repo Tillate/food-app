@@ -11,7 +11,7 @@ function Navigation () {
                    <NavLink to="/">Accueil</NavLink>
                 </li>
                 <li>
-                   <NavLink to="/about">A propos</NavLink>
+                   <NavLink to="/favoris">Favoris</NavLink>
                 </li>
                 <li>
                    <NavLink to="/contact">Contact</NavLink>

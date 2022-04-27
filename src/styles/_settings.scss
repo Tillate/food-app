@@ -26,6 +26,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family: Quicksand, sans-serif;
+	background-color: #121212 ;
+	color: white;
 }
 ol, ul {
 	list-style: none;
@@ -45,6 +47,8 @@ table {
 
 h1 {
 	font-size: 2rem;
+	text-align: center;
+	padding: 20px 0;
 
 }
 a {

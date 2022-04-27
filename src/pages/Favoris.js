@@ -1,13 +1,13 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 
-const About = () => {
+const Favoris = () => {
     return (
         <div>
             <Navigation />
-            <h1>Page ABOUT</h1>
+            <h1>Favoris</h1>
         </div>
     );
 };
 
-export default About;
+export default Favoris;
