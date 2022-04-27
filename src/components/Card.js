@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Card = ({ gif }) => {
   const [isActive, setIsActive] = useState(false);
   
-  const ClassSwitch = () => {
+  const classSwitch = () => {
       isActive ? setIsActive(false) : setIsActive(true);
       // console.log(isActive);
   }
@@ -21,20 +21,36 @@ const Card = ({ gif }) => {
       console.log("Deja ajouté aux favoris");
     }
   };
+
+  const deleteStorage = () => {
+    let storedData = window.localStorage.gifs.split(",");
+    let newData = storedData.filter((id) => id !== gif.id);
+    
+    window.localStorage.gifs = newData;
+    window.location.reload();
+    
+  };
     
   return (
     <li className="card">
-      <img src={gif.images.original.url} alt="Gif" />
+      <img src={ gif.images.original.url } alt="Gif" />
       <div className="infos">
-        <h3>{gif.title}</h3>
+        <h3>{ gif.title }</h3>
         <div className="placement">
             {gif.id ? (
-                <div className={isActive ? "heart is-active" : "heart"} onClick= { () => {ClassSwitch(); addStorage()}}></div>
+                <div className={isActive ? "heart is-active" : "heart"} onClick= { () => {
+                  classSwitch(); 
+                  addStorage();
+                }}>
+                
+                </div>
                 ) : (
-                <div className="heart" >Supprimer de la liste</div>
+                <div className="cross" onClick={() => deleteStorage()} >Supprimer des favoris</div>
                 )
             }
+
         </div>
+        <div className="cross" onClick={() => deleteStorage()} >Supprimer des favoris</div>
         
       </div>
     </li>

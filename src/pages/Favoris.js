@@ -27,7 +27,8 @@ const Favoris = () => {
             <h1>Favoris</h1>
             <ul className="result card-list">
                 {listFavoris.length > 0 ? (
-                    listFavoris.map((gif) => <Card gif={gif} key={gif.id} />)
+                    listFavoris.map((gif) => <Card gif={gif}
+                     key={gif.id} />)
                 ) : (
                     <h2>Aucun coup de coeur pour le moment</h2>
                 )}

@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   font-family: Quicksand, sans-serif;
-  background-color: #121212;
+  background-color: #1a1824;
   color: white;
 }
 
@@ -81,7 +81,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 15px;
-  background-color: black;
+  background-color: #121119;
   padding: 20px 0;
 }
 
@@ -141,6 +141,18 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.card .cross {
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.card .cross:hover {
+  -webkit-box-shadow: inset 0 -6px 0 0 #9933FF;
+          box-shadow: inset 0 -6px 0 0 #9933FF;
 }
 
 .card-list {
