@@ -41,17 +41,14 @@ const Card = ({ gif }) => {
                 <div className={isActive ? "heart is-active" : "heart"} onClick= { () => {
                   classSwitch(); 
                   addStorage();
-                }}>
-                
+                }}> 
                 </div>
                 ) : (
                 <div className="cross" onClick={() => deleteStorage()} >Supprimer des favoris</div>
                 )
             }
-
         </div>
         <div className="cross" onClick={() => deleteStorage()} >Supprimer des favoris</div>
-        
       </div>
     </li>
   );

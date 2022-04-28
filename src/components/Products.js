@@ -12,8 +12,6 @@ const Products = () => {
             .then((res) => setDataGif(res.data.data));
     }, []);
 
-
-
     return (
         <div className='card-container'>
             <h2>Random Gif</h2>
