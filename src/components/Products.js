@@ -5,7 +5,6 @@ import Card from "./Card";
 
 const Products = () => {
     const [dataGif, setDataGif] = useState([]);
-
     useEffect(() => {
         axios
             .get('https://api.giphy.com/v1/gifs/trending?api_key=ufkzL96rHd8HrvtN3l7Qew95ZEzCEfKI&limit=25&rating=pg')

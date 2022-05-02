@@ -7,7 +7,7 @@ const Contact = () => {
     const [time, setTime] = useState(new Date().toLocaleDateString());
     const [hours, setHours] = useState(new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds());
 
-
+  
 
     return (
       <div>

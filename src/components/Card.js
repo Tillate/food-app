@@ -28,7 +28,6 @@ const Card = ({ gif }) => {
     
     window.localStorage.gifs = newData;
     window.location.reload();
-    
   };
     
   return (
@@ -37,7 +36,7 @@ const Card = ({ gif }) => {
       <div className="infos">
         <h3>{ gif.title }</h3>
         <div className="placement">
-            {gif.id ? (
+            {gif.id && isActive == false ? (
                 <div className={isActive ? "heart is-active" : "heart"} onClick= { () => {
                   classSwitch(); 
                   addStorage();
@@ -48,7 +47,6 @@ const Card = ({ gif }) => {
                 )
             }
         </div>
-        <div className="cross" onClick={() => deleteStorage()} >Supprimer des favoris</div>
       </div>
     </li>
   );
